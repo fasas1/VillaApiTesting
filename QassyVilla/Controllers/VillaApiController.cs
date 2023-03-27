@@ -10,10 +10,15 @@ namespace QassyVilla.Controllers
     [ApiController]
     public class VillaApiController : ControllerBase
     {
+        public VillaApiController()
+        {
+        }
+
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult <IEnumerable<VillaDTO>> GetVillas()
         {
+        
             return Ok(VillaStore.villaList);
         }
 
@@ -25,6 +30,7 @@ namespace QassyVilla.Controllers
         {
             if (id == 0)
             {
+             
                 return BadRequest();
             }
             var villa = VillaStore.villaList.FirstOrDefault(u => u.Id == id);
