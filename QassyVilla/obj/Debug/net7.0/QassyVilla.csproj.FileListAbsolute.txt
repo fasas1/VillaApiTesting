@@ -31,3 +31,7 @@ C:\Users\BABZ\source\repos\QassyVilla\QassyVilla\obj\Debug\net7.0\refint\QassyVi
 C:\Users\BABZ\source\repos\QassyVilla\QassyVilla\obj\Debug\net7.0\QassyVilla.pdb
 C:\Users\BABZ\source\repos\QassyVilla\QassyVilla\obj\Debug\net7.0\QassyVilla.genruntimeconfig.cache
 C:\Users\BABZ\source\repos\QassyVilla\QassyVilla\obj\Debug\net7.0\ref\QassyVilla.dll
+C:\Users\BABZ\source\repos\QassyVilla\QassyVilla\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\BABZ\source\repos\QassyVilla\QassyVilla\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\BABZ\source\repos\QassyVilla\QassyVilla\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\BABZ\source\repos\QassyVilla\QassyVilla\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
