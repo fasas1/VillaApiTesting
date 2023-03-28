@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using QassyVilla.Data;
 
@@ -11,9 +12,11 @@ using QassyVilla.Data;
 namespace QassyVilla.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230328094458_SeedVillaTable")]
+    partial class SeedVillaTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -70,7 +73,7 @@ namespace QassyVilla.Migrations
                         {
                             Id = 1,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 3, 28, 10, 49, 17, 872, DateTimeKind.Local).AddTicks(8047),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Details = "it catering to the demands of users, technology and whatsoever it maybe. Version control systems keep these revisions straight",
                             ImageUrl = "https://www.pexels.com/photo/white-concrete-2-storey-house-206172/",
                             Name = "Quest Villa",
@@ -83,7 +86,7 @@ namespace QassyVilla.Migrations
                         {
                             Id = 2,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 3, 28, 10, 49, 17, 872, DateTimeKind.Local).AddTicks(8073),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Details = "it catering to the demands of users, technology and whatsoever it maybe. Version control systems keep these revisions straight",
                             ImageUrl = "https://www.pexels.com/photo/palm-trees-at-night-258154/",
                             Name = "Skully Villa",
@@ -96,7 +99,7 @@ namespace QassyVilla.Migrations
                         {
                             Id = 3,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 3, 28, 10, 49, 17, 872, DateTimeKind.Local).AddTicks(8077),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Details = "it catering to the demands of users, technology and whatsoever it maybe. Version control systems keep these revisions straight",
                             ImageUrl = "https://www.pexels.com/photo/construction-house-architecture-luxury-53610/",
                             Name = "Moment Villa",
@@ -109,7 +112,7 @@ namespace QassyVilla.Migrations
                         {
                             Id = 4,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 3, 28, 10, 49, 17, 872, DateTimeKind.Local).AddTicks(8081),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Details = "it catering to the demands of users, technology and whatsoever it maybe. Version control systems keep these revisions straight",
                             ImageUrl = "https://www.pexels.com/photo/architecture-beach-blue-chairs-261101/",
                             Name = "Qassy Villa",
@@ -122,7 +125,7 @@ namespace QassyVilla.Migrations
                         {
                             Id = 5,
                             Amenity = "",
-                            CreatedDate = new DateTime(2023, 3, 28, 10, 49, 17, 872, DateTimeKind.Local).AddTicks(8085),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Details = "it catering to the demands of users, technology and whatsoever it maybe. Version control systems keep these revisions straight",
                             ImageUrl = "https://www.pexels.com/photo/architecture-beach-blue-chairs-261101/",
                             Name = "Bazooy Villa",
