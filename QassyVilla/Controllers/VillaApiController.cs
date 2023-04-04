@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using QassyVilla.Data;
 using QassyVilla.Models;
 using QassyVilla.Models.DTO;
@@ -142,8 +143,8 @@ namespace QassyVilla.Controllers
             {
                 return BadRequest();
             }
-            var villa = _db.Villas.FirstOrDefault(u => u.Id == id);
-
+            var villa = _db.Villas.AsNoTracking().FirstOrDefault(u => u.Id == id);
+         
             VillaDTO villaDTO = new()
             {
                 Amenity = villa.Amenity,
